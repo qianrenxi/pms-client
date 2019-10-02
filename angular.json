@@ -35,7 +35,11 @@
               "apps/pms-web/src/styles/ng-molain/ng-molain.scss",
               "apps/pms-web/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@antv/g2/build/g2.js",
+              "node_modules/@antv/data-set/dist/data-set.min.js",
+              "node_modules/@antv/g2-plugin-slider/dist/g2-plugin-slider.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -73,7 +77,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "pms-web:build",
-            "proxyConfig": "apps/pms-web/proxy.conf.json"
+            "proxyConfig": "apps/pms-web/proxy.conf.json",
+            "port": 4900
           },
           "configurations": {
             "production": {

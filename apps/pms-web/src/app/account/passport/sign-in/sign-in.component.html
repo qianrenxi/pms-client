@@ -57,9 +57,9 @@
 
         <div class="other">
           其他登录方式
-          <i nz-tooltip="in fact Auth0 via window" (click)="open('auth0', 'window')" nz-icon type="alipay-circle"
+          <i nz-tooltip nzTooltipTitle="in fact Auth0 via window" (click)="open('auth0', 'window')" nz-icon type="alipay-circle"
             class="icon"></i>
-          <i nz-tooltip="in fact Github via redirect" (click)="open('github')" nz-icon type="taobao-circle"
+          <i nz-tooltip nzTooltipTitle="in fact Github via redirect" (click)="open('github')" nz-icon type="taobao-circle"
             class="icon"></i>
           <i (click)="open('weibo', 'window')" nz-icon type="weibo-circle" class="icon"></i>
           <a class="register" routerLink="/passport/register">注册账户</a>
