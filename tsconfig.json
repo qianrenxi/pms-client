@@ -18,7 +18,11 @@
     "paths": {
       "@qianrenxi/pms/core": ["apps/pms-web/src/app/core/index.ts"],
       "@qianrenxi/pms/shared": ["apps/pms-web/src/app/shared/index.ts"],
-      "@qianrenxi/pms/layout": ["apps/pms-web/src/app/layout/index.ts"]
+      "@qianrenxi/pms/layout": ["apps/pms-web/src/app/layout/index.ts"],
+      "@qianrenxi/pms/my": ["libs/pms/my/src/index.ts"],
+      "@qianrenxi/pms/product": ["libs/pms/product/src/index.ts"],
+      "@qianrenxi/pms/project": ["libs/pms/project/src/index.ts"],
+      "@qianrenxi/pms/test": ["libs/pms/test/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

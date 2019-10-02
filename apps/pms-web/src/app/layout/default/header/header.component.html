@@ -19,41 +19,11 @@
         <i nz-icon nzType="appstore" nzTheme="outline"></i>
       </a>
     </li> -->
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/training">
-        <span class="nav-link-text">培训</span>
+    <li class="nav-item" *ngFor="let item of mainMenuItems">
+      <a class="nav-link" [routerLink]="item.uri">
+        <span class="nav-link-text">{{item.title}}</span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/learning">
-        <span class="nav-link-text">学习</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/exam">
-        <span class="nav-link-text">考试</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/resources']">
-        <span class="nav-link-text">资源</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/sns">
-        <span class="nav-link-text">社区</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/report">
-        <span class="nav-link-text">报告</span>
-      </a>
-    </li>
-    <!-- <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/admin']">
-        <span class="nav-link-text">管理</span>
-      </a>
-    </li> -->
   </ul>
 
   <!-- search-form -->

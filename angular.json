@@ -99,10 +99,7 @@
               "apps/pms-web/tsconfig.app.json",
               "apps/pms-web/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/pms-web/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/pms-web/**"]
           }
         },
         "test": {
@@ -136,13 +133,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/pms-web-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/pms-web-e2e/**"
-            ]
+            "tsConfig": ["apps/pms-web-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/pms-web-e2e/**"]
           }
         }
       }
@@ -160,9 +152,7 @@
             "outputPath": "dist/apps/mock-api",
             "main": "apps/mock-api/src/main.ts",
             "tsConfig": "apps/mock-api/tsconfig.app.json",
-            "assets": [
-              "apps/mock-api/src/assets"
-            ]
+            "assets": ["apps/mock-api/src/assets"]
           },
           "configurations": {
             "production": {
@@ -191,10 +181,7 @@
               "apps/mock-api/tsconfig.app.json",
               "apps/mock-api/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/mock-api/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/mock-api/**"]
           }
         },
         "test": {
@@ -203,6 +190,130 @@
             "jestConfig": "apps/mock-api/jest.config.js",
             "tsConfig": "apps/mock-api/tsconfig.spec.json"
           }
+        }
+      }
+    },
+    "pms-my": {
+      "projectType": "library",
+      "root": "libs/pms/my",
+      "sourceRoot": "libs/pms/my/src",
+      "prefix": "qianrenxi",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pms/my/tsconfig.lib.json",
+              "libs/pms/my/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pms/my/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pms/my/jest.config.js",
+            "tsConfig": "libs/pms/my/tsconfig.spec.json",
+            "setupFile": "libs/pms/my/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "pms-product": {
+      "projectType": "library",
+      "root": "libs/pms/product",
+      "sourceRoot": "libs/pms/product/src",
+      "prefix": "qianrenxi",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pms/product/tsconfig.lib.json",
+              "libs/pms/product/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pms/product/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pms/product/jest.config.js",
+            "tsConfig": "libs/pms/product/tsconfig.spec.json",
+            "setupFile": "libs/pms/product/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "pms-project": {
+      "projectType": "library",
+      "root": "libs/pms/project",
+      "sourceRoot": "libs/pms/project/src",
+      "prefix": "qianrenxi",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pms/project/tsconfig.lib.json",
+              "libs/pms/project/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pms/project/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pms/project/jest.config.js",
+            "tsConfig": "libs/pms/project/tsconfig.spec.json",
+            "setupFile": "libs/pms/project/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "pms-test": {
+      "projectType": "library",
+      "root": "libs/pms/test",
+      "sourceRoot": "libs/pms/test/src",
+      "prefix": "qianrenxi",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pms/test/tsconfig.lib.json",
+              "libs/pms/test/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pms/test/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pms/test/jest.config.js",
+            "tsConfig": "libs/pms/test/tsconfig.spec.json",
+            "setupFile": "libs/pms/test/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
         }
       }
     }

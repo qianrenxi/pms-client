@@ -16,6 +16,18 @@
     },
     "mock-api": {
       "tags": []
+    },
+    "pms-my": {
+      "tags": []
+    },
+    "pms-product": {
+      "tags": []
+    },
+    "pms-project": {
+      "tags": []
+    },
+    "pms-test": {
+      "tags": []
     }
   }
 }

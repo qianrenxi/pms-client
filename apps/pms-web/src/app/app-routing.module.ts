@@ -8,6 +8,10 @@ const routes: Routes = [
     path: '', canActivate: [AuthenticationGuardService], component: LayoutDefaultComponent, children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+      { path: 'my', loadChildren: () => import('@qianrenxi/pms/my').then(m => m.PmsMyModule) },
+      { path: 'product', loadChildren: () => import('@qianrenxi/pms/product').then(m => m.PmsProductModule) },
+      { path: 'project', loadChildren: () => import('@qianrenxi/pms/project').then(m => m.PmsProjectModule) },
+      { path: 'test', loadChildren: () => import('@qianrenxi/pms/test').then(m => m.PmsTestModule) },
       // { path: '', loadChildren: () => import('.').then(m => m) },
       
       // acount
