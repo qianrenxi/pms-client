@@ -1,5 +1,5 @@
 {
-  "npmScope": "pms",
+  "npmScope": "qianrenxi",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { SharedModule } from '@qimooc/console/shared';
+import { SharedModule } from '@qianrenxi/pms/shared';
 
 import { AccountPagesRoutingModule } from './account-pages-routing.module';
 import { AccountHomeComponent } from './account-home/account-home.component';

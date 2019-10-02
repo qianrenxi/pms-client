@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { SharedModule } from '@qimooc/console/shared';
+import { SharedModule } from '@qianrenxi/pms/shared';
 
 import { ExceptionRoutingModule } from './exception-routing.module';
 import { Exception403Component } from './403.component';

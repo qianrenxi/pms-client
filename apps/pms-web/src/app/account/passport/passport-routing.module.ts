@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LayoutPassportComponent } from '@qimooc/console/layout';
+import { LayoutPassportComponent } from '@qianrenxi/pms/layout';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignUpResultComponent } from './sign-up-result/sign-up-result.component';

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { SharedModule } from '@qimooc/console/shared';
+import { SharedModule } from '@qianrenxi/pms/shared';
 
 import { DevHelperService } from './dev-helper.service';
 

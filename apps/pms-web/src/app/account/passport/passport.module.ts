@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PassportRoutingModule } from './passport-routing.module';
 
-import { SharedModule } from '@qimooc/console/shared';
-import { AppLayoutModule } from '@qimooc/console/layout';
+import { SharedModule } from '@qianrenxi/pms/shared';
+import { AppLayoutModule } from '@qianrenxi/pms/layout';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpResultComponent } from './sign-up-result/sign-up-result.component';

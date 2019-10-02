@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { DefaultLayoutService } from '@qimooc/console/layout';
+import { DefaultLayoutService } from '@qianrenxi/pms/layout';
 
 @Component({
   selector: 'pms-account-home',

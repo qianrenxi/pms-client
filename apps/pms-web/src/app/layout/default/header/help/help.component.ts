@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HelpDialogService } from '@qimooc/console/shared';
+import { HelpDialogService } from '@qianrenxi/pms/shared';
 
 @Component({
   selector: 'pms-header-help',

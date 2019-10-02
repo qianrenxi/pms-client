@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SharedModule } from '@qimooc/console/shared';
+import { SharedModule } from '@qianrenxi/pms/shared';
 
 import { LayoutDefaultComponent } from './default/default.component';
 import { LayoutPassportComponent } from './passport/passport.component';

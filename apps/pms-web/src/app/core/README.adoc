@@ -15,7 +15,7 @@
 .使上述第二点生效需要在项目的 `tsconfig.json` 文件中做如下配置
 ----
 "paths": {
-      "@qimooc/console/core": ["apps/console/src/app/core/index.ts"],
+      "@qianrenxi/pms/core": ["apps/console/src/app/core/index.ts"],
       ...
 }
 ----

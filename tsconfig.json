@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@qianrenxi/pms/core": ["apps/pms-web/src/app/core/index.ts"],
+      "@qianrenxi/pms/shared": ["apps/pms-web/src/app/shared/index.ts"],
+      "@qianrenxi/pms/layout": ["apps/pms-web/src/app/layout/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

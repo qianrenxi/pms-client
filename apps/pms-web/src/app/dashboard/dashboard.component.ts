@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DefaultLayoutService } from '@qimooc/console/layout';
+import { DefaultLayoutService } from '@qianrenxi/pms/layout';
 
 
 @Component({

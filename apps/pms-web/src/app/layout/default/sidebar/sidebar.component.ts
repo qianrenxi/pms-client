@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ApplicationContext } from '@qimooc/console/core';
+import { ApplicationContext } from '@qianrenxi/pms/core';
 import * as _ from 'lodash';
 import { TranslateService } from '@ng-molain/common';
 import { DefaultLayoutService } from '../../default-layout.service';

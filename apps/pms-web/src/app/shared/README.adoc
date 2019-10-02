@@ -25,7 +25,7 @@
 .使上述第二点生效需要在项目的 `tsconfig.json` 文件中做如下配置
 ----
 "paths": {
-      "@qimooc/console/shared": ["apps/console/src/app/shared/index.ts"],
+      "@qianrenxi/pms/shared": ["apps/console/src/app/shared/index.ts"],
       ...
 }
 ----

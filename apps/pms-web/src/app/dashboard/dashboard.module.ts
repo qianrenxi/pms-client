@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SharedModule } from '@qimooc/console/shared';
+import { SharedModule } from '@qianrenxi/pms/shared';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { MonitorComponent } from './monitor/monitor.component';
 import { WorkplaceComponent } from './workplace/workplace.component';
