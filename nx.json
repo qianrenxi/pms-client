@@ -1,5 +1,5 @@
 {
-  "npmScope": "pms-client",
+  "npmScope": "pms",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",

@@ -1,0 +1,22 @@
+@import '~@ng-molain/common/style/theming.scss';
+
+:host {
+    display: block;
+    // margin: -24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ml-sidenav::ng-deep {
+    .ant-menu {
+        // color: 
+        background-color: $gray-100;
+    }
+}
+
+.layout-default-content {
+    padding: 24px;
+}

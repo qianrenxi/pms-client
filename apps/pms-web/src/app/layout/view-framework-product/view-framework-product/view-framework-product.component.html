@@ -1,0 +1,12 @@
+<nz-layout class="h-100">
+    <!-- <nz-sider class="bg-white pms-sider" nzCollapsible [nzCollapsed]="layoutServcie.sidebarCollapsed" [nzTrigger]="null" nzCollapsedWidth="64"> -->
+    <nz-sider class="bg-secondary pms-sider" [class.d-none]="vfService?.collapsed">
+        <!-- <pms-layout-sidebar class="layout-default-sidebar"></pms-layout-sidebar> -->
+        <ml-sidenav [navItems]="menus"></ml-sidenav>
+    </nz-sider>
+    <nz-content>
+        <section class="layout-default-content">
+            <router-outlet></router-outlet>
+        </section>
+    </nz-content>
+</nz-layout>

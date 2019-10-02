@@ -1,0 +1,17 @@
+
+<nz-layout class="h-100">
+  <nz-header class="bg-primary text-white">
+    <pms-layout-header class="layout-default-header"></pms-layout-header>
+  </nz-header>
+  <nz-layout>
+    <!-- <nz-sider class="bg-white pms-sider" nzCollapsible [nzCollapsed]="layoutServcie.sidebarCollapsed" [nzTrigger]="null" nzCollapsedWidth="64"> -->
+    <nz-sider class="bg-white pms-sider" [class.d-none]="layoutServcie.sidebarCollapsed">
+      <pms-layout-sidebar class="layout-default-sidebar"></pms-layout-sidebar>
+    </nz-sider>
+    <nz-content>
+      <section class="layout-default-content">
+        <router-outlet></router-outlet>
+      </section>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

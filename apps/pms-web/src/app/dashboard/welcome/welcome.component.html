@@ -1,0 +1,115 @@
+<nz-page-header nzTitle="仪表盘">
+  <nz-page-header-extra>
+    <div>
+      <button nz-button nzType="dashed">自定义</button>
+    </div>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <p>欢迎使用企慕课堂！</p>
+    <p class="mb-0">不确定从哪里开始？查看 <a>操作手册</a> 和 <a>培训课程</a> 。</p>
+  </nz-page-header-content>
+</nz-page-header>
+
+<!-- 开始 (基本功能)，最近，帮助，自定义，学习（如何使用），工作流程，完整功能地图 -->
+
+<h3>基本功能</h3>
+<div nz-row nzGutter="16">
+  <div nz-col nzXs="24" nzSm="12" nzMd="8" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-primary text-center rounded-md">
+      <div nz-col nzSpan="8" class="p-md text-white">
+        <i nz-icon nzType="plus" nzTheme="outline" class="display-2"></i>
+      </div>
+      <div nz-col nzSpan="16" class="bg-white p-md text-left">
+        <h3 class="h3 mb0">
+          <i nz-icon nzType="play-square" nzTheme="outline" class="text-primary"></i>
+          <span class="ml-2">创建课程</span>
+        </h3>
+        <div class="text-grey-dark" style="height: 42px; overflow: hidden;">
+          传视频，写文章，做签到，设计考试或作业，全面支持线上和线下的混合式学习
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzXs="24" nzSm="12" nzMd="8" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-success text-center rounded-md">
+      <div nz-col nzSpan="8" class="p-md text-white">
+        <i nz-icon nzType="plus" nzTheme="outline" class="display-2"></i>
+      </div>
+      <div nz-col nzSpan="16" class="bg-white p-md text-left">
+        <h3 class="h3 mb0">
+          <i nz-icon nzType="play-square" nzTheme="outline" class="text-success"></i>
+          <span class="ml-2">组织培训</span>
+        </h3>
+        <div class="text-grey-dark" style="height: 42px; overflow: hidden;">
+          制定培训计划、生成培训项目、创建培训班、管理培训内容、颁发结业证书，支持线上线下混合培训体系管理
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzXs="24" nzSm="12" nzMd="8" class="mb-md">
+    <div nz-row nzType="flex" nzAlign="middle" class="bg-orange text-center rounded-md">
+      <div nz-col nzSpan="8" class="p-md text-white">
+        <i nz-icon nzType="plus" nzTheme="outline" class="display-2"></i>
+      </div>
+      <div nz-col nzSpan="16" class="bg-white p-md text-left">
+        <h3 class="h3 mb0">
+          <i nz-icon nzType="play-square" nzTheme="outline" class="text-orange"></i>
+          <span class="ml-2">发起考试</span>
+        </h3>
+        <div class="text-grey-dark" style="height: 42px; overflow: hidden;">
+          管理题库、设计试卷、发布专项考试活动，全考试流程覆盖，支持线上线下多形式考试活动组织
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>基本流程</h3>
+<div>
+  <nz-card>
+    <div *ngFor="let f of flows" class="flows-row d-flex">
+      <div class="flow-item flow-item-0">
+        <div [attr.title]="f.roleName">{{f.roleName}}</div>
+      </div>
+      <div *ngFor="let item of f.flowItems" class="flow-item flow-item-5">
+        <div [attr.title]="item.name">{{item.name}}</div>
+      </div>
+    </div>
+  </nz-card>
+</div>
+
+<div nz-row nzGutter="16">
+  <div nz-col nzXs="24" nzMd="12">
+    <nz-card [nzBordered]="false" [nzTitle]="salesTitle">
+      <ng-template #salesTitle>
+        在线学习统计
+        <small class="text-sm font-weight-normal">系统在线课程学习人次 (按月) 统计</small>
+      </ng-template>
+      <g2-bar *ngIf="salesData" height="275" [data]="salesData"></g2-bar>
+    </nz-card>
+  </div>
+  <div nz-col nzXs="24" nzMd="12">
+    <nz-card [nzTitle]="growthTitle" [nzBordered]="false">
+      <ng-template #growthTitle>
+        活动组织统计
+        <small class="text-sm font-weight-normal">系统中组织活动及参与人数（按月）统计</small>
+      </ng-template>
+      <g2-timeline *ngIf="offlineChartData" [data]="offlineChartData" [height]="248" [padding]="[0, 0, 0, 0]"
+        [titleMap]="{ y1: '活动数', y2: '参与人数' }"></g2-timeline>
+    </nz-card>
+  </div>
+</div>
+
+<h3>如何使用企慕课堂</h3>
+<div nz-row nzGutter="16">
+  <div *ngFor="let c of guideCourses" nz-col nzXs="24" nzSm="12" nzMd="8" nzXl="6" nzXXl="4" class="mb-3">
+    <nz-card [nzCover]="courseThumbnailTpl" nzHoverable class="ant-card__body-nopadding">
+      <div class="py-3 px-2">
+        <nz-card-meta [nzTitle]="c.title"></nz-card-meta>
+      </div>
+      <ng-template #courseThumbnailTpl>
+        <img [src]="c.thumbnail" [attr.alt]="c.title">
+      </ng-template>
+    </nz-card>
+  </div>
+</div>

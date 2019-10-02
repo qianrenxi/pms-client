@@ -1,0 +1,38 @@
+
+// .ant-layout-header {
+//     height: 64px;
+//     padding: 0px;
+//     line-height: 64px;
+//     background: #001529;
+// }
+
+.pms-sider {
+    // transition: all 0.5s linear;
+
+    &::ng-deep {
+        .ant-layout-sider-children {
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+}
+
+.layout-default-content {
+    padding: 24px;
+    min-height: 100%;
+    position: relative;
+
+    &::ng-deep {
+        nz-page-header, .nz-page-header {
+            margin-top: -24px;
+            margin-left: -24px;
+            margin-right: -24px;
+            margin-bottom: 24px;
+        }
+    }
+}

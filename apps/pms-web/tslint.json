@@ -1,7 +1,7 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "pmsClient", "camelCase"],
-    "component-selector": [true, "element", "pms-client", "kebab-case"]
+    "directive-selector": [true, "attribute", "pms", "camelCase"],
+    "component-selector": [true, "element", "pms", "kebab-case"]
   }
 }

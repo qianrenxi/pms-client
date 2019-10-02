@@ -23,9 +23,16 @@
             "aot": false,
             "assets": [
               "apps/pms-web/src/favicon.ico",
-              "apps/pms-web/src/assets"
+              "apps/pms-web/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "apps/pms-web/src/styles/ng-zorro-antd/ng-zorro-antd.less",
+              "apps/pms-web/src/styles/ng-molain/ng-molain.scss",
               "apps/pms-web/src/styles.scss"
             ],
             "scripts": []

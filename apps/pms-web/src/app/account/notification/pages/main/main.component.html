@@ -1,0 +1,27 @@
+
+<div class="d-flex bg-white p-3 pb-4">
+    <div style="width: 200px;">
+        <!-- <h4>消息中心</h4> -->
+        <ul nz-menu>
+            <!-- <li nz-submenu nzTitle="站内消息"> -->
+            <li nz-menu-group nzTitle="站内消息">
+                <ul>
+                    <li nz-menu-item>全部消息</li>
+                    <li nz-menu-item>未读消息 <nz-badge [nzCount]="225" class="float-right mt-2"></nz-badge></li>
+                    <li nz-menu-item>已读消息</li>
+                </ul>
+            </li>
+            <li nz-menu-item>消息接收管理</li>
+            <!-- <li nz-submenu nzTitle="消息接收管理">
+                <ul>
+                    <li nz-menu-item>基本接收管理</li>
+                    <li nz-menu-item>语音接收管理</li>
+                    <li nz-menu-item>钉钉接收管理</li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<h3>安全设置</h3>
+<div class="my-3">
+    <span class="mr-3">当前账户安全程度:</span>
+    <span class="d-inline-block" style="width: 120px;">
+        <nz-progress [nzPercent]="50" [nzShowInfo]="false" nzStrokeColor="orange" nzStrokeWidth="12"></nz-progress>
+    </span>
+    <span class="ml-2">安全级别:</span>
+    <span class="text-orange ml-2">中</span>
+</div>
+
+<nz-list>
+    <nz-list-item [nzActions]="[itemStateAction1, itemEditAction1]">
+        <nz-list-item-meta nzTitle="账户密码" [nzDescription]="secureItemDesc1">
+            <ng-template #secureItemDesc1>
+                <p>安全性高的密码可以使帐号更安全。建议您定期更换密码，设置一个包含字母，符号或数字中至少两项且长度超过6位的密码。</p>
+            </ng-template>
+        </nz-list-item-meta>
+        <ng-template #itemStateAction1>
+            <span class="text-success">
+                <i nz-icon nzType="check-circle" nzTheme="outline"></i>
+                <span class="ml-1">已设置</span>
+            </span>
+        </ng-template>
+        <ng-template #itemEditAction1>
+            <a>修改</a>
+        </ng-template>
+    </nz-list-item>
+
+    <nz-list-item [nzActions]="[itemStateAction2, itemEditAction2]">
+        <nz-list-item-meta nzTitle="密保手机" [nzDescription]="secureItemDesc2">
+            <ng-template #secureItemDesc2>
+                <p>请绑定手机[您的手机为安全手机，可以找回密码，但不能用于登录]</p>
+            </ng-template>
+        </nz-list-item-meta>
+        <ng-template #itemStateAction2>
+            <span class="text-warning">
+                <i nz-icon nzType="exclamation-circle" nzTheme="outline"></i>
+                <span class="ml-1">未设置</span>
+            </span>
+        </ng-template>
+        <ng-template #itemEditAction2>
+            <a>修改</a>
+        </ng-template>
+    </nz-list-item>
+
+    <nz-list-item [nzActions]="[itemStateAction3, itemEditAction3]">
+        <nz-list-item-meta nzTitle="保密问题" [nzDescription]="secureItemDesc3">
+            <ng-template #secureItemDesc3>
+                <p>您还没有设置密保问题</p>
+            </ng-template>
+        </nz-list-item-meta>
+        <ng-template #itemStateAction3>
+            <span class="text-warning">
+                <i nz-icon nzType="exclamation-circle" nzTheme="outline"></i>
+                <span class="ml-1">未设置</span>
+            </span>
+        </ng-template>
+        <ng-template #itemEditAction3>
+            <a>修改</a>
+        </ng-template>
+    </nz-list-item>
+
+    <nz-list-item [nzActions]="[itemStateAction4, itemEditAction4]">
+        <nz-list-item-meta nzTitle="备用邮箱" [nzDescription]="secureItemDesc4">
+            <ng-template #secureItemDesc4>
+                <p>您已绑定了邮箱 <span class="text-success">sys***@system.com</span> [企慕课堂发送的各类系统、营销、服务通知将发送到您的备用邮箱。]
+                </p>
+            </ng-template>
+        </nz-list-item-meta>
+        <ng-template #itemStateAction4>
+            <span class="text-success">
+                <i nz-icon nzType="check-circle" nzTheme="outline"></i>
+                <span class="ml-1">已设置</span>
+            </span>
+        </ng-template>
+        <ng-template #itemEditAction4>
+            <a>修改</a>
+        </ng-template>
+    </nz-list-item>
+
+    <!-- <nz-list-item>
+      <nz-list-item-meta nzTitle="MFA设备" [nzDescription]="secureItemDesc">
+          <ng-template #secureItemDesc></ng-template>
+      </nz-list-item-meta>
+    </nz-list-item> -->
+
+</nz-list>
