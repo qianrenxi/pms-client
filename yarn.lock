@@ -263,6 +263,15 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/cdk@^8.0.0":
+  version "8.2.2"
+  resolved "http://npm.parim.net/@angular%2fcdk/-/cdk-8.2.2.tgz#e7898a66dbf479edaed4e6c71cf37ddd83daa1fa"
+  integrity sha1-54mKZtv0ee2u1ObHHPN93YPaofo=
+  dependencies:
+    tslib "^1.7.1"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@8.3.3":
   version "8.3.3"
   resolved "http://npm.parim.net/@angular%2fcli/-/cli-8.3.3.tgz#87e77e3ad9e6d0c57b05512862b8fefe29555833"
@@ -378,6 +387,21 @@
   resolved "http://npm.parim.net/@angular%2frouter/-/router-8.2.8.tgz#4058e239c2682845bd06b69be77e7b920c1ad87e"
   integrity sha1-QFjiOcJoKEW9Brab5357kgwa2H4=
   dependencies:
+    tslib "^1.9.0"
+
+"@ant-design/colors@^3.1.0":
+  version "3.2.2"
+  resolved "http://npm.parim.net/@ant-design%2fcolors/-/colors-3.2.2.tgz#5ad43d619e911f3488ebac303d606e66a8423903"
+  integrity sha1-WtQ9YZ6RHzSI66wwPWBuZqhCOQM=
+  dependencies:
+    tinycolor2 "^1.4.1"
+
+"@ant-design/icons-angular@^8.0.2":
+  version "8.0.3"
+  resolved "http://npm.parim.net/@ant-design%2ficons-angular/-/icons-angular-8.0.3.tgz#e0e3a4104a878058f9a211ca427e07e2baed9c86"
+  integrity sha1-4OOkEEqHgFj5ohHKQn4H4rrtnIY=
+  dependencies:
+    "@ant-design/colors" "^3.1.0"
     tslib "^1.9.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35", "@babel/code-frame@^7.5.5":
@@ -1332,6 +1356,20 @@
   integrity sha1-PGq4u8hRvSXXXZSOUdCirFdZ+nI=
   dependencies:
     optional "0.1.4"
+
+"@ng-molain/common@^0.8.0-beta.19":
+  version "0.8.0-beta.19"
+  resolved "http://npm.parim.net/@ng-molain%2fcommon/-/common-0.8.0-beta.19.tgz#1186b288c55bf5d5dfb5470c89c8cf3a9357bd0d"
+  integrity sha512-ivy1BJCKVtd1U3hpfbqscYC7GM54ZNZBG6EGJz9hk6/CM2XwLoOG3bj6ZUPhofjxF1HO5fxFmu+rMOuz0HytBQ==
+  dependencies:
+    tslib "^1.9.0"
+
+"@ng-molain/components@^0.8.0-beta.19":
+  version "0.8.0-beta.19"
+  resolved "http://npm.parim.net/@ng-molain%2fcomponents/-/components-0.8.0-beta.19.tgz#10fc0bbdc2853bfaf9a8e7abbcd87583bb1c4a9c"
+  integrity sha512-CkYtqozVecJe/+SatGNwazCVa+kEkXjPX1R8uyqQ/A1JsyBozLlAuFeQWzO8W6hCw36nRZPCRzo+Nb7TUrqSXQ==
+  dependencies:
+    tslib "^1.9.0"
 
 "@ngtools/webpack@8.3.2":
   version "8.3.2"
@@ -3348,6 +3386,11 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cropperjs@^1.5.5:
+  version "1.5.5"
+  resolved "http://npm.parim.net/cropperjs/-/cropperjs-1.5.5.tgz#07d04c64244ab88c1bfc382a848ec346ef50b7b9"
+  integrity sha1-B9BMZCRKuIwb/DgqhI7DRu9Qt7k=
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "http://npm.parim.net/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -3493,10 +3536,15 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@^1.27.2:
+date-fns@^1.27.2, date-fns@^1.30.1:
   version "1.30.1"
   resolved "http://npm.parim.net/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
   integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+
+date-fns@^2.4.1:
+  version "2.4.1"
+  resolved "http://npm.parim.net/date-fns/-/date-fns-2.4.1.tgz#b53f9bb65ae6bd9239437035710e01cf383b625e"
+  integrity sha1-tT+btlrmvZI5Q3A1cQ4Bzzg7Yl4=
 
 date-now@^0.1.4:
   version "0.1.4"
@@ -4484,6 +4532,11 @@ file-loader@4.2.0:
   dependencies:
     loader-utils "^1.2.3"
     schema-utils "^2.0.0"
+
+file-saver@^2.0.2:
+  version "2.0.2"
+  resolved "http://npm.parim.net/file-saver/-/file-saver-2.0.2.tgz#06d6e728a9ea2df2cce2f8d9e84dfcdc338ec17a"
+  integrity sha1-BtbnKKnqLfLM4vjZ6E383DOOwXo=
 
 filename-regex@^2.0.0:
   version "2.0.1"
@@ -7234,6 +7287,23 @@ next-tick@1, next-tick@^1.0.0:
   resolved "http://npm.parim.net/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+ng-zorro-antd@^8.3.1:
+  version "8.3.1"
+  resolved "http://npm.parim.net/ng-zorro-antd/-/ng-zorro-antd-8.3.1.tgz#191a78565bb72e8372d837fd542d0a3914dba67a"
+  integrity sha1-GRp4Vlu3LoNy2Df9VC0KORTbpno=
+  dependencies:
+    "@angular/cdk" "^8.0.0"
+    "@ant-design/icons-angular" "^8.0.2"
+    date-fns "^1.30.1"
+    tslib "^1.9.0"
+
+ngx-countdown@^8.0.1:
+  version "8.0.1"
+  resolved "http://npm.parim.net/ngx-countdown/-/ngx-countdown-8.0.1.tgz#3bbbef82c08ffb231a68e200fcb15e7db76c303a"
+  integrity sha1-O7vvgsCP+yMaaOIA/LFefbdsMDo=
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "http://npm.parim.net/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -7876,7 +7946,7 @@ parse5@4.0.0:
   resolved "http://npm.parim.net/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA==
 
-parse5@5.1.0:
+parse5@5.1.0, parse5@^5.0.0:
   version "5.1.0"
   resolved "http://npm.parim.net/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
   integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
@@ -9751,6 +9821,11 @@ timers-ext@^0.1.5:
     es5-ext "~0.10.46"
     next-tick "1"
 
+tinycolor2@^1.4.1:
+  version "1.4.1"
+  resolved "http://npm.parim.net/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+  integrity sha1-9PrTM0R7wLB9TcjpIJ2POaisd+g=
+
 tmp@0.0.33, tmp@^0.0.33:
   version "0.0.33"
   resolved "http://npm.parim.net/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -9956,7 +10031,7 @@ tsconfig-paths@^3.4.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@1.10.0, tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "http://npm.parim.net/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
