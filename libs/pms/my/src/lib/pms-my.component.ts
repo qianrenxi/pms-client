@@ -13,9 +13,48 @@ export class PmsMyComponent implements OnInit {
   ngOnInit() {
     this.layoutService.setSidebarMenus([
       {
-        "text": "系统管理",
-        "link": "/admin/system",
-        "i18n": "menu.admin.system"
+        "text": "工作台",
+        "link": "./workplace",
+      },
+      {
+        "text": "日程",
+        "link": "./",
+      },
+      {
+        "text": "任务",
+        "link": "./",
+      },
+      {
+        "text": "Bug",
+        "link": "./",
+      },
+      {
+        "text": "测试",
+        "link": "./",
+      },
+      {
+        "text": "需求",
+        "link": "./",
+      },
+      {
+        "text": "项目",
+        "link": "./",
+      },
+      {
+        "text": "动态",
+        "link": "./",
+      },
+      {
+        "text": "档案",
+        "link": "./",
+      },
+      {
+        "text": "积分",
+        "link": "./",
+      },
+      {
+        "text": "联系人",
+        "link": "./",
       },
     ]);
   }
